@@ -10,7 +10,7 @@
 - Отслеживание новых файлов в директории `/opt/airflow/data/videos`
 - Настроен connection через GUI Airflow в разделе "Admins → Connections"
 
-![Filesensor connection example](./lab_2/images/image_1.jpg)
+![Filesensor connection example](lab_2/images/image_1.jpg)
 
 ### 1.2 Извлечение аудио
 - Используется Docker-образ `jrottenberg/ffmpeg`
