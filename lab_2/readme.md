@@ -13,7 +13,7 @@
 - Для автоматического запуска пайплайна настроен сенсор, который отслеживает появление новых видеофайлов в директории `/opt/airflow/data/videos`.
 - Настроен `connection` в интерфейсе Airflow через раздел "Admins → Connections".
 
-![Filesensor connection example](lab_2/images/image_1.jpg)
+![Filesensor connection example](./lab_2/images/image_1.jpg)
 
 ### 1.2 Извлечение аудио из видео
 - Используем Docker-образ `jrottenberg/ffmpeg`, который преобразует видео в аудиофайл формата WAV.
