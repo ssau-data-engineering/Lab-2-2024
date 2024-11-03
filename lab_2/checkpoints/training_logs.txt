@@ -1,0 +1,42 @@
+Using device: cpu
+
+Epoch 1/10
+Training Loss: 0.6981, Training Accuracy: 57.26%
+Validation Loss: 0.6683, Validation Accuracy: 60.89%
+Model saved with validation accuracy: 60.89%
+
+Epoch 2/10
+Training Loss: 0.6732, Training Accuracy: 60.53%
+Validation Loss: 0.6815, Validation Accuracy: 60.89%
+
+Epoch 3/10
+Training Loss: 0.6732, Training Accuracy: 60.76%
+Validation Loss: 0.6684, Validation Accuracy: 60.89%
+
+Epoch 4/10
+Training Loss: 0.6725, Training Accuracy: 60.18%
+Validation Loss: 0.6694, Validation Accuracy: 60.89%
+
+Epoch 5/10
+Training Loss: 0.6713, Training Accuracy: 60.76%
+Validation Loss: 0.6684, Validation Accuracy: 60.89%
+
+Epoch 6/10
+Training Loss: 0.6715, Training Accuracy: 60.76%
+Validation Loss: 0.6704, Validation Accuracy: 60.89%
+
+Epoch 7/10
+Training Loss: 0.6718, Training Accuracy: 60.76%
+Validation Loss: 0.6692, Validation Accuracy: 60.89%
+
+Epoch 8/10
+Training Loss: 0.6737, Training Accuracy: 60.76%
+Validation Loss: 0.6683, Validation Accuracy: 60.89%
+
+Epoch 9/10
+Training Loss: 0.6729, Training Accuracy: 60.76%
+Validation Loss: 0.6686, Validation Accuracy: 60.89%
+
+Epoch 10/10
+Training Loss: 0.6720, Training Accuracy: 60.76%
+Validation Loss: 0.6685, Validation Accuracy: 60.89%
