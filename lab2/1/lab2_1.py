@@ -24,7 +24,7 @@ wait_for_new_file = FileSensor(
 
 extract_audio = DockerOperator(
     task_id='extract_audio',
-    image='irameis/dat-eng:lab2',
+    image='irameis/dat-eng:ffmpeg',
     command='ffmpeg -y -i /data/input/input.mp4 -vn /data/audio.mp3',
     mounts=[Mount(source='/data', target='/data', type='bind')],
     docker_url="tcp://docker-proxy:2375",
@@ -33,7 +33,7 @@ extract_audio = DockerOperator(
 
 transform_audio_to_text = DockerOperator(
     task_id='audio_2_text',
-    image='irameis/dat-eng:lab2',
+    image='irameis/dat-eng:requests-pdf',
     command='python /data/audio_2_text.py',
     mounts=[Mount(source='/data', target='/data', type='bind')],
     docker_url="tcp://docker-proxy:2375",
@@ -42,7 +42,7 @@ transform_audio_to_text = DockerOperator(
 
 summarize_text = DockerOperator(
     task_id='summarization',
-    image='irameis/dat-eng:lab2',
+    image='irameis/dat-eng:requests-pdf',
     command='python /data/summarization.py',
     mounts=[Mount(source='/data', target='/data', type='bind')],
     docker_url="tcp://docker-proxy:2375",
@@ -51,7 +51,7 @@ summarize_text = DockerOperator(
 
 save_to_pdf = DockerOperator(
     task_id='save_pdf',
-    image='irameis/dat-eng:lab2',
+    image='irameis/dat-eng:requests-pdf',
     command='python /data/save_pdf.py',
     mounts=[Mount(source='/data', target='/data', type='bind')],
     docker_url="tcp://docker-proxy:2375",
