@@ -100,3 +100,6 @@ DAG для 2 части находится [здесь](dag_2.py). И два .py
 ![image](https://github.com/user-attachments/assets/bfd9f336-3c53-4c1e-b940-f70722167d9f)
 
 [Файл ipynb](model.ipynb) с загрузкой обученной модели.
+
+![image](https://github.com/user-attachments/assets/8f3f89b2-f9b6-4245-9d83-5e16fcf7ae95)
+
