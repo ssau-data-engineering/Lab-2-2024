@@ -3,7 +3,7 @@ import requests
 import sys
 import json
 
-API_TOKEN = "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"
+API_TOKEN = "API_TOKEN"
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-small"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
