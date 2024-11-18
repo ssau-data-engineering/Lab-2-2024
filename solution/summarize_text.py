@@ -3,7 +3,7 @@ import requests
 import sys
 import json
 
-API_TOKEN = "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"
+API_TOKEN = "API_TOKEN"
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"  # Модель для резюмирования
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
