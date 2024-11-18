@@ -49,3 +49,25 @@ RUN pip install --no-cache-dir \
     requests
 ```
 
+Теперь произведем сборку, тегнем и запушим, с помощью ряда команд:
+
+```
+docker build . tf_container2
+```
+
+```
+docker tag –t tf_container2 sat4h/tf_container2
+```
+
+```
+docker push sat4h/tf_container2
+```
+
+С помощью можно посмотреть образ докера.
+```
+docker images
+```
+
+![image](https://github.com/user-attachments/assets/702a5844-33c1-4093-a6d0-e870d30d0be9)
+
+[DAG](dag_1.py) был загружен в папке airflow/dags. И мы можем видеть его в airflow через некоторое время.
