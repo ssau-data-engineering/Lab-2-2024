@@ -8,6 +8,8 @@
 
 ### Лабораторная работа №2 "Инференс и обучение НС"
 
+## Часть 1 "Автоматическое распознавание речи"
+
 В рамках данного задания предлагается построить пайплайн, который реализует систему "Автоматического распознавания речи" для видеофайлов.
 
 Построенный пайплайн будет выполнять следующие действия поочередно:
@@ -79,4 +81,18 @@ docker images
 А вот и результат:
 
 ![image](https://github.com/user-attachments/assets/91514676-d37a-46e6-9186-920ec48f8da6)
+
+## Часть 2 "Обучение нейросети"
+
+DAG для 2 части находится [здесь](dag_2.py). И два .py файла [load_and_preprocess_data.py](load_and_preprocess_data.py) с предобработкой ![image](https://github.com/user-attachments/assets/2c166720-e9d2-4464-920c-dce7163f67d6)
+ и файл [load_data_train_model.py](load_data_train_model.py) с обучением.
+
+В качестве датасета я взял [Iris Dataset](https://gist.github.com/netj/8836201).
+
+Все прошло успешно, предобработанный данные сохранились в /data/lr2/opr, а обученная модель и логи сохранились в папке /data/logs
+
+![image](https://github.com/user-attachments/assets/2e31f5e0-b6fd-43b5-8544-cefbf8202f11)
+
+![image](https://github.com/user-attachments/assets/4b784ec8-ad06-42e6-8ff8-3c60e1599234)
+
 
