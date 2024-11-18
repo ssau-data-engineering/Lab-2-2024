@@ -91,8 +91,12 @@ DAG для 2 части находится [здесь](dag_2.py). И два .py
 
 Все прошло успешно, предобработанный данные сохранились в /data/lr2/opr, а обученная модель и логи сохранились в папке /data/logs
 
-![image](https://github.com/user-attachments/assets/2e31f5e0-b6fd-43b5-8544-cefbf8202f11)
+![image](https://github.com/user-attachments/assets/b62b744a-a266-4117-9b2a-f83b967b14e2)
 
 ![image](https://github.com/user-attachments/assets/4b784ec8-ad06-42e6-8ff8-3c60e1599234)
 
+Логи
 
+![image](https://github.com/user-attachments/assets/bfd9f336-3c53-4c1e-b940-f70722167d9f)
+
+[Файл ipynb](model.ipynb) с загрузкой обученной модели.
