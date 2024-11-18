@@ -71,3 +71,12 @@ docker images
 ![image](https://github.com/user-attachments/assets/702a5844-33c1-4093-a6d0-e870d30d0be9)
 
 [DAG](dag_1.py) был загружен в папке airflow/dags. И мы можем видеть его в airflow через некоторое время.
+
+Я взял [одну из популярных фраз Таноса на англ. языке](input_video.mp4). Запускаем наш DAG и в конце получаем коспект по тексту в формате pdf.
+
+![image](https://github.com/user-attachments/assets/378feaca-34e6-4c2b-aa6f-1ac763ee0ec9)
+
+А вот и результат:
+
+![image](https://github.com/user-attachments/assets/91514676-d37a-46e6-9186-920ec48f8da6)
+
