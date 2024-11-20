@@ -1,0 +1,53 @@
+ training, validation, and test. If a data set doesn't already contain a
+validation component, as in this case, the training data set is often
+partitioned further into training and validation components as we'll see further
+below. We'll cover this topic in more detail in subsequent videos, but we just
+wanted to emphasize that data splitting is one of the most important topics in
+machine learning. In this example, we're going to use just a single feature to
+keep things simple and make it easy to plot the results. However, you should
+understand that many different features can be used to predict a single target
+value. Recall in the previous video where we performed image classification,
+each pixel value in the input image was treated as a separate feature, and
+remember that we had nearly 200,000 values in each training sample. In this
+case, we're going to use just a single feature in the corresponding target value
+for each training sample. When we use the load data function to load the Boston
+Housing data set, it automatically loads all the features in X-Train and X-Test,
+but we can easily extract a single feature from each record in the training test
+data sets. In this case, we're going to extract the sixth feature, which is
+index 5, which corresponds to the average number of rooms in a house, and store
+that feature in X-Train 1D and X-Test 1D. We chose this feature because in
+general, we'd expect that the price of a home will be highly correlated to the
+number of rooms in a house. When working with any kind of a data set, it's
+always a good idea to visualize it. Oftentimes, a data set will be far too large
+to visualize, but you can always plot a portion of it. But in this case, since
+we have just a few hundred records, we can easily view the entire data set in
+the plot below. So here you can see that the median price of a home does have
+some correlation with the number of rooms in a home. In case you're wondering,
+the values that are all shown at 50k were actually capped at that number when
+this data set was created. So we don't actually know what those values are,
+which is one reason why it's important to inspect your data so you're aware of
+any anomalies that may affect your model. Before we proceed to the
+implementation, let's just take a look at what we're trying to achieve here. In
+the plot below, we show all the data points from the training data set. And our
+goal is to model the data with a straight line, which is defined by a Y
+intercept indicated as B and a slope indicated as M. So when we train the model,
+we're looking for the best values of B and M that defines the best fit line
+through this data. Let's now talk about how we can use a neural network to
+create such a model. You may have already guessed this, but the values of M and
+B represent the weights in our neural network model. In general, neural networks
+have many neurons, which are arranged in layers. So deep neural networks
+typically have many layers and many neurons per layer. But in this example, the
+neural network consists of just a single neuron. So there's just a single layer
+and just one neuron in that layer. In the figure below, X represents the input,
+which is just a single feature from our training data set. And the predicted
+output is a single number, which represents the median value of a price of a
+home. As before, we have a loss function, which is evaluated based on the
+predicted value of the model and the corresponding ground truth for every
+training sample. So conceptually, this is very similar to what we discussed in
+the previous video, except now, the predicted output and the ground truth are
+floating point numbers. What's new here is that we have two different types of
+weights. Both are trainable parameters, but one of them is called a weight, and
+the other one is referred to as a bias. And our goal here is to train the model
+to determine the optimum value for these parameters. And this is done using
+gradient descent and back propagation as discussed in the previous video. More
+formally,
