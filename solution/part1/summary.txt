@@ -1,0 +1,5 @@
+In this example, we're going to use just a single feature in the corresponding
+target value for each training sample. When working with any kind of a data set,
+it's always a good idea to visualize it. And our goal here is to model the data
+with a straight line, which is defined by a Y                intercept and a
+slope indicated as M.
