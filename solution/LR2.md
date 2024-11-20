@@ -95,7 +95,7 @@ transform_audio_to_text = DockerOperator(
 )
 ```
 
-#### 4.Формирование конспетка
+#### 4.Формирование конспекта
 Для реализации данной задачи использовалась модель `facebook/bart-large-cnn`. 
 
 ``` Python
