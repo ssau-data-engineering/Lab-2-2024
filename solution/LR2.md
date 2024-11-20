@@ -50,7 +50,7 @@
 #### 1. Мониторинг целевой папки на предмет появления новых видеофайлов
 Мониторинг целевой папки осуществляется с помощью оператора FileSensor, его настройка производилась в Airflow.
 
-![Настройка connection'а FileSensor](./images/img1.png)
+![Настройка connection'а FileSensor](./images/1.png)
 
 ``` Python
 wait_for_new_file = FileSensor(
@@ -65,9 +65,7 @@ wait_for_new_file = FileSensor(
 #### 2.Извлечение аудиодорожки
 Использовался образ `jrottenberg/ffmpeg` с `https://huggingface.co/`
 
-![Токен с `huggingface.co`](./images/img2.png) 
-
-Аудио сохранялось в формате .wav. 
+Аудио сохранялось в формате .wav.
 
 ``` Python
 extract_audio = DockerOperator(
@@ -80,8 +78,6 @@ extract_audio = DockerOperator(
     dag=dag,
 )
 ```
-
-Использование готового образа и про докерхаб 
 
 #### 3.Преобразование аудиодорожки в текст
 
@@ -128,7 +124,7 @@ save_to_pdf = DockerOperator(
     dag=dag)
 ```
 
-![Выполненеие пайплайна в airflow](./images/img3.png) 
+![Выполненеие пайплайна в airflow](./images/2.png) 
 
 ### Пайплайн для обучения модели
 
@@ -150,5 +146,5 @@ train_model = DockerOperator(
 ``` 
 Данные обучения сохраняются в текстовый файл `training_logs.txt`.
 
-![Выполненеие пайплайна в airflow](./images/img4.png) 
+![Выполненеие пайплайна в airflow](./images/3.png) 
 
