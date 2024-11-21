@@ -1,6 +1,6 @@
 import requests
 API_URL = "https://api-inference.huggingface.co/models/slauw87/bart_summarisation"
-API_TOKEN = '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'
+API_TOKEN = ''
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 with open('/data/text.txt', "rb") as f:
