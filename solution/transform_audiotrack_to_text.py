@@ -1,6 +1,6 @@
 import requests
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-small"
-API_TOKEN = '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'
+API_TOKEN = ''
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
 with open('/data/audio.aac', "rb") as f:
