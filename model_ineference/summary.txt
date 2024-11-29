@@ -1,0 +1,1 @@
+I'm gonna show you two types of comments here . We're gonna do a comment that says, this set's unbreaking to one . This is a bad comment. Instead, we set unbreaking here because this item will disappear otherwise when used . That's a good comment. We put reasoning instead of what it does .
