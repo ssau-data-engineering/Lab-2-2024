@@ -1,0 +1,17 @@
+# Используем базовый образ Python
+FROM python:3.9-slim
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Устанавливаем зависимости Python
+RUN pip install --no-cache-dir fpdf requests
+
+# Устанавливаем необходимые системные пакеты
+RUN apt-get update && apt-get install -y \
+    fonts-dejavu-core \
+    && rm -rf /var/lib/apt/lists/*
+
+# Копируем скрипты в контейнер
+COPY airflow/scripts/read_data.py /app/
+COPY airflow/scripts/audio_to_text.py airflow/scripts/summarize_text.py airflow/scripts/save_to_pdf.py /app/

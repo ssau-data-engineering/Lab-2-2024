@@ -1,0 +1,16 @@
+# Используем базовый образ Python
+FROM python:3.9-slim
+
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Устанавливаем зависимости
+RUN pip install --no-cache-dir pandas scikit-learn tensorflow
+
+
+# Копируем скрипт read_data.py в контейнер
+COPY airflow/scripts/train_model.py /app/
+
+
+# Указываем точку входа
+ENTRYPOINT ["python", "train_model.py"]

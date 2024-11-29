@@ -1,0 +1,14 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# Устанавливаем зависимости
+RUN pip install --no-cache-dir pandas scikit-learn
+
+# Копируем скрипт read_data.py в контейнер
+COPY airflow/scripts/read_data.py /app/
+
+# Указываем точку входа (если необходимо)
+# CMD ["python", "read_data.py"]
+
+
