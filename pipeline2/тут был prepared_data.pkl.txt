@@ -1,0 +1,1 @@
+тут был prepared_data.pkl (800+ мб)

@@ -1,0 +1,1 @@
+The three-dimensional space that you and I live in is 3D. Vectors that live in the flat plane are 2D, while those sitting in broader space are 3D, according to the physics student's perspective. The computer science student's view is that vectors are arrows pointing in space.
