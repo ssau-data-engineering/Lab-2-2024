@@ -1,5 +1,6 @@
 # Пайплайн для инференса данных
 
+![Airflow](./inference/airflow.png)
 - использованы кастомные образы, запушенные на хаб
 - взаимодействие с моделью - через API HuggingFace, через ui получен токен
 - url для преобразования аудио в текст: https://api-inference.huggingface.co/models/openai/whisper-small
@@ -7,6 +8,7 @@
 
 # Пайплайн для обучения модели
 
+![Airflow](./training/airflow.png)
 - выбран тестовый датасет для классификации https://www.kaggle.com/datasets/prishasawhney/mushroom-dataset
 - read_data - преобразование данных в данные для обучения и тестирования
 - train_model - построение простейшей модели
