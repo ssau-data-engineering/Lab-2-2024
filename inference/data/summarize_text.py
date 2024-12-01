@@ -1,9 +1,13 @@
-import requests
+import os
 import sys
+import requests
 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 API_URL="https://api-inference.huggingface.co/models/slauw87/bart_summarisation"
-API_TOKEN="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"
+API_TOKEN=os.getenv("API_TOKEN")
 
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
